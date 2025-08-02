@@ -1,4 +1,11 @@
 
+# 🌐 Idioma / Language
+> 📌 **Selecciona tu idioma:**
+> - [🇪🇸**Español**](README.es.md) (actual)
+> - [🇬🇧English](README.md)
+---
+
+
 # 🏥 Sistema de Gestión de Pacientes
 **Clínica "UTN-Medical Center"**
 **⚠️ Requisitos Técnicos: El proyecto debe ser desarrollado en Java utilizando JavaFX para la interfaz gráfica, y seguir estrictamente el patrón de diseño MVC (Modelo – Vista – Controlador).**
@@ -98,12 +105,12 @@ Maneja la lógica de interacción entre modelo y vista:
 9. **Salir**
 
 
-## 💾 Persistencia
-- Al iniciar, se debe cargar `configs.json` con:
-  - Especialidades
-  - Obras sociales válidas
-  - Pacientes y turnos previos (si existen)
-- Al cerrar caja, se deben sobrescribir los archivos JSON con los datos actuales del sistema.
+## 💾 Persistencia y Tecnologías Requeridas
+- Persistencia dual:
+  - Configuración inicial desde `configs.json`
+  - **Base de datos relacional utilizando JPA** para guardar pacientes, turnos y recaudaciones.
+- Repositorios y entidades JPA deben estar correctamente definidos.
+- CRUD completo con operaciones a través de la base de datos.
 
 
 ## 🧱 Requisitos Técnicos Detallados
