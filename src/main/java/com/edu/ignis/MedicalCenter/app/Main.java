@@ -1,4 +1,4 @@
-package com.edu.ignis.MedicalCenter;
+package com.edu.ignis.MedicalCenter.app;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

@@ -7,7 +7,7 @@
 
 
 # 🏥 Sistema de Gestión de Pacientes
-**Clínica "UTN-Medical Center"**
+**Clínica "Medical Center"**
 **⚠️ Requisitos Técnicos: El proyecto debe ser desarrollado en Java utilizando JavaFX para la interfaz gráfica, y seguir estrictamente el patrón de diseño MVC (Modelo – Vista – Controlador).**
 
 
@@ -49,7 +49,7 @@ Maneja la lógica de interacción entre modelo y vista:
 - `dni`: único
 - `edad` (18–90)
 - `fechaRegistro`
-- `obraSocial`: Swiss Medical, Apres, PAMI, Particular
+- `obraSocial`: SwMedical, Apres, FAMI, Particular
 
 ### 🗓️ Clase `Turno`
 - `id`: autoincremental, único
@@ -71,17 +71,17 @@ Maneja la lógica de interacción entre modelo y vista:
 ## 🧠 Validaciones importantes
 - **Edad**: numérica entre 18 y 90.
 - **Obra social según edad**:
-  - ≥ 60: solo PAMI
-  - < 60: PAMI no disponible
+  - ≥ 60: solo FAMI
+  - < 60: FAMI no disponible
 - **Especialidades**: Médico Clínico, Odontología, Psicología, Traumatología.
 - **Estado inicial del turno**: “Activo”.
 - **Monto base del turno**: $4000, con ajustes:
 
 | Obra Social   | Descuento/Recargo     | Condición Adicional                      |
 |---------------|------------------------|-------------------------------------------|
-| Swiss Medical | -40%                   | Edad 18-60: -10% extra                    |
+| SwMedical     | -40%                   | Edad 18-60: -10% extra                    |
 | Apres         | -25%                   | Edad 26-59: -3% extra                     |
-| PAMI          | -60%                   | Edad ≥ 80: -3% extra                      |
+| FAMI          | -60%                   | Edad ≥ 80: -3% extra                      |
 | Particular    | +5%                    | Edad 40-60: +15% extra                    |
 
 
@@ -101,7 +101,7 @@ Maneja la lógica de interacción entre modelo y vista:
    - Si no hay turnos pendientes, guarda pacientes y turnos en JSON
    - Caso contrario, mostrar mensaje
 8. **Mostrar informe** (elegido según último dígito de tu DNI):
-   - Monto total obtenido de pacientes Swiss Medical mayores de 21 años
+   - Monto total obtenido de pacientes SwMedical mayores de 21 años
 9. **Salir**
 
 

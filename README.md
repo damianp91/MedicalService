@@ -7,14 +7,13 @@
 
 
 # 🏥 Patient Management System  
-**Clinic "UTN-Medical Center"**  
+**Clinic "Medical Center"**  
 **⚠️ Technical Requirements: The project must be developed in Java using JavaFX for the graphical user interface, and must strictly follow the MVC (Model–View–Controller) design pattern.**
 
 
 ## 🎯 General Objective  
 Develop a desktop application for managing patients and medical appointments in a clinic. The application must be modular, efficient, and follow best development practices including:
-- Language: **Java**  
-- Interface: **JavaFX**  
+- Language: **Java**  Interface: **JavaFX**  
 - Architecture: **MVC (Model–View–Controller)**  
 - Persistence: Initial configuration from `.json` files and database management using **JPA (Java Persistence API)**  
 
@@ -49,7 +48,7 @@ Manages the interaction logic between model and view:
 - `dni`: unique
 - `age` (18–90)
 - `registrationDate`
-- `insurance`: Swiss Medical, Apres, PAMI, Private
+- `insurance`: SwMedical, Apres, FAMI, Private
 
 ### 🗓️ Class `Appointment`
 - `id`: auto-increment, unique
@@ -72,17 +71,17 @@ Manages the interaction logic between model and view:
 
 - **Age**: numeric, between 18 and 90  
 - **Insurance based on age**:
-  - ≥ 60: only PAMI allowed
-  - < 60: PAMI not allowed
+  - ≥ 60: only FAMI allowed
+  - < 60: FAMI not allowed
 - **Specialties**: General Medicine, Dentistry, Psychology, Traumatology  
 - **Initial appointment status**: “Active”  
 - **Base appointment fee**: $4000, with the following adjustments:
 
 | Insurance      | Discount/Surcharge     | Extra Condition                          |
 |----------------|------------------------|-------------------------------------------|
-| Swiss Medical  | -40%                   | Age 18–60: additional -10%                |
+| SwMedical      | -40%                   | Age 18–60: additional -10%                |
 | Apres          | -25%                   | Age 26–59: additional -3%                 |
-| PAMI           | -60%                   | Age ≥ 80: additional -3%                  |
+| FAMI           | -60%                   | Age ≥ 80: additional -3%                  |
 | Private        | +5%                    | Age 40–60: additional +15%                |
 
 
@@ -103,7 +102,7 @@ Manages the interaction logic between model and view:
    - Only if there are no “Active” or “Completed” appointments
    - Save patients and appointments to JSON
    - Otherwise, show warning message
-8. **Total revenue from Swiss Medical patients over 21 
+8. **Total** revenue from SwMedical patients over 21
 9. **Exit**
 
 
@@ -117,9 +116,9 @@ Manages the interaction logic between model and view:
 
 ## 🧱 Technical Requirements
 
-- Language: **Java**  
-- GUI: **JavaFX** (FXML optional but recommended)  
-- Architecture: **Strictly MVC**  
+- Language: **Java**
+- GUI: **JavaFX** (FXML optional but recommended)
+- Architecture: **Strictly MVC**
 - Must apply:
   - Control structures
   - Loops
