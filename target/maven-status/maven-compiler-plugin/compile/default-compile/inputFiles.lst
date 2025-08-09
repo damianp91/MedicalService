@@ -1,1 +1,12 @@
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Specialty.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/view/MenuView.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Clinic.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/view/CreateAppointmentView.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Status.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Patient.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/app/TestConexion.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/persistence/JPAUtil.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Appointment.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Insurance.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/view/RegisterPatientView.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/app/Main.java

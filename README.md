@@ -11,29 +11,29 @@
 **⚠️ Technical Requirements: The project must be developed in Java using JavaFX for the graphical user interface, and must strictly follow the MVC (Model–View–Controller) design pattern.**
 
 
-## 🎯 General Objective  
+## 🎯 General Objective
 Develop a desktop application for managing patients and medical appointments in a clinic. The application must be modular, efficient, and follow best development practices including:
-- Language: **Java**  Interface: **JavaFX**  
-- Architecture: **MVC (Model–View–Controller)**  
-- Persistence: Initial configuration from `.json` files and database management using **JPA (Java Persistence API)**  
+- Language: **Java**  Interface: **JavaFX**
+- Architecture: **MVC (Model–View–Controller)**
+- Persistence: Initial configuration from `.json` files and database management using **JPA (Java Persistence API)**
 
 
 ## 🧱 Project Structure (MVC Format)
 
-### Model (`model`)  
+### Model (`model`)
 Contains classes that represent data and business logic:
 - `Patient`
 - `Appointment`
 - `Clinic`
 - Utility classes for validations and payment calculations
 
-### View (`view`)  
+### View (`view`)
 Graphical interface built with **JavaFX**:
 - Screens for registering patients, appointments, handling attendance, payments, reports, etc.
 - Visual elements (FXML, view controllers, etc.)
 - Input fields validated visually (age, insurance, name, etc.)
 
-### Controller (`controller`)  
+### Controller (`controller`)
 Manages the interaction logic between model and view:
 - Handles events from the GUI (e.g., "Register patient" button)
 - Validates and processes data with help from the model

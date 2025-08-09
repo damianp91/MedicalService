@@ -1,5 +1,7 @@
 package com.edu.ignis.MedicalCenter.app;
 
+import com.edu.ignis.MedicalCenter.view.MenuView;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -11,11 +13,11 @@ public class Main extends Application {
   }
 
   @Override
-  public void start(Stage stage) {
-    Label label = new Label("¡Hello world from JavaFX!");
-    Scene scene = new Scene(label, 400, 200);
-    stage.setScene(scene);
-    stage.setTitle("JavaFX Project:MedicalCenter");
-    stage.show();
+  public void start(Stage primaryStage) {
+    MenuView menu = new MenuView(primaryStage);
+    Scene scene = new Scene(menu, 400, 200);
+    primaryStage.setScene(scene);
+    primaryStage.setTitle("JavaFX Project:MedicalCenter");
+    primaryStage.show();
   }
 }
