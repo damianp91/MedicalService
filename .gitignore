@@ -1,0 +1,30 @@
+# ===== Java/Maven =====
+/target/
+/out/
+/build/
+/bin/
+
+# ===== IDEs =====
+/.classpath
+/.project
+/.settings/
+/.idea/
+/*.iml
+.vscode/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== tf =====
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ===== pass =====
+# Ignorar persistence.xml sensible
+/src/main/resources/META-INF/persistence.xml
+
+# ===== Others =====
+*.class

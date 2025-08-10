@@ -1,10 +1,12 @@
 com/edu/ignis/MedicalCenter/app/Main.class
+com/edu/ignis/MedicalCenter/view/CreateAppointmentView.class
+com/edu/ignis/MedicalCenter/model/Clinic.class
+com/edu/ignis/MedicalCenter/view/MenuView.class
+com/edu/ignis/MedicalCenter/app/TestConexion.class
 com/edu/ignis/MedicalCenter/model/Patient.class
 com/edu/ignis/MedicalCenter/model/Appointment.class
 com/edu/ignis/MedicalCenter/model/Status.class
+com/edu/ignis/MedicalCenter/view/RegisterPatientView.class
 com/edu/ignis/MedicalCenter/model/Insurance.class
-com/edu/ignis/MedicalCenter/model/Clinic.class
-com/edu/ignis/MedicalCenter/view/MenuView.class
 com/edu/ignis/MedicalCenter/persistence/JPAUtil.class
-com/edu/ignis/MedicalCenter/app/TestConexion.class
 com/edu/ignis/MedicalCenter/model/Specialty.class
