@@ -15,7 +15,7 @@ public class Main extends Application {
   @Override
   public void start(Stage primaryStage) {
     MenuView menu = new MenuView(primaryStage);
-    Scene scene = new Scene(menu, 400, 200);
+    Scene scene = new Scene(menu, 400, 400);
     primaryStage.setScene(scene);
     primaryStage.setTitle("JavaFX Project:MedicalCenter");
     primaryStage.show();
