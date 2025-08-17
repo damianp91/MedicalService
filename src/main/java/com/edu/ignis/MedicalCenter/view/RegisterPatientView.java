@@ -1,8 +1,12 @@
 package com.edu.ignis.MedicalCenter.view;
 
+import com.edu.ignis.MedicalCenter.model.Insurance;
+
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
@@ -30,10 +34,10 @@ public class RegisterPatientView extends VBox {
     Label lbDni = new Label("DNI: ");
     TextField fieldDni = new TextField();
     Label lbBirth = new Label("Birh date: ");
-    TextField fieldBirth = new TextField();
+    DatePicker fieldBirth = new DatePicker();
     Label lbInsurance = new Label("Insurance: ");
-    TextField fieldInsurance = new TextField();
-
+    ComboBox<Insurance> fieldInsurance = new ComboBox<>();
+    fieldInsurance.getItems().addAll(Insurance.values());
 
     Button btnSave = new Button("Save");
     Button btnClean = new Button("Clean");
@@ -42,6 +46,14 @@ public class RegisterPatientView extends VBox {
     btnBack.setOnAction(e -> {
       MenuView menu = new MenuView(stage);
       stage.setScene(new Scene(menu, 400, 400));
+    });
+
+    btnClean.setOnAction(e -> {
+      fieldName.clear();
+      fieldLastName.clear();
+      fieldDni.clear();
+      fieldBirth.setValue(null);
+      fieldInsurance.setValue(null);
     });
 
 

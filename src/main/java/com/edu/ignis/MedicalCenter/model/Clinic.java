@@ -5,5 +5,5 @@ public class Clinic {
   private int id;
   private String businessName;
   private Appointment appointment;
-  private double revenue; 
+  private double revenue;
 }

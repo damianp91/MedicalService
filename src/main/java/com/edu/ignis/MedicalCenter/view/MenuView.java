@@ -1,7 +1,5 @@
 package com.edu.ignis.MedicalCenter.view;
 
-import com.edu.ignis.MedicalCenter.model.Appointment;
-import com.edu.ignis.MedicalCenter.model.Patient;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

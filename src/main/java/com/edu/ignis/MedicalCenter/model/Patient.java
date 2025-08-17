@@ -1,6 +1,7 @@
 package com.edu.ignis.MedicalCenter.model;
 
-import java.util.Date;
+import java.io.Serializable;
+import java.time.LocalDate;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
@@ -11,37 +12,38 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "patients")
-public class Patient {
+public class Patient implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
-  @Basic
+  @Basic(optional = false)
+  @Column(length = 30, nullable = false)
   private String name;
+  @Column(length = 30, nullable = false)
   private String lastName;
   
   @Column(name = "dni", unique = true, nullable = false)
   private int dni;
-  @Temporal(TemporalType.DATE)
-  private Date registrationDate;
+  @Column(name = "registration_date", nullable = false)
+  private LocalDate registrationDate;
 
-  @Temporal(TemporalType.DATE)
-  private Date birthDate;
+  @Column(name = "birth_date", nullable = false)
+  private LocalDate birthDate;
 
   @Enumerated(EnumType.STRING)
+  @Column(nullable = false)
   private Insurance insurance;
-
-  public int getId() {
-    return id;
-  }
   
   // Constructor
-  public Patient(String name, String lastName, int dni, Date registrationDate,
-      Date birthDate, Insurance insurance) {
+  // Constructor empty is necesary because JPA needs for insert entities by
+  // reflection
+  public Patient () { }
+
+  public Patient(String name, String lastName, int dni, LocalDate registrationDate,
+      LocalDate birthDate, Insurance insurance) {
     this.name = name;
     this.lastName = lastName;
     this.dni = dni;
@@ -51,64 +53,35 @@ public class Patient {
   }
 
   // Getters
-  public String getName() {
-    return name;
-  }
+  public int getId() { return id; }
 
-  public String getLastName() {
-    return lastName;
-  }
+  public String getName() { return name; }
 
-  public int getDni() {
-    return dni;
-  }
+  public String getLastName() { return lastName; }
 
-  public Date getRegistrationDate() {
-    return registrationDate;
-  }
+  public int getDni() { return dni; }
 
-  public Date getBirthDate() {
-    return birthDate;
-  }
+  public LocalDate getRegistrationDate() { return registrationDate; }
 
-  public Insurance getInsurance() {
-    return insurance;
-  }
+  public LocalDate getBirthDate() { return birthDate; }
+
+  public Insurance getInsurance() { return insurance; }
 
   // Setters
-  public void setId(int id) {
-    this.id = id;
-  }
+  public void setId(int id) { this.id = id; }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+  public void setName(String name) { this.name = name; }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
+  public void setLastName(String lastName) { this.lastName = lastName; }
 
-  public void setDni(int dni) {
-    this.dni = dni;
-  }
+  public void setDni(int dni) { this.dni = dni; }
 
-  public void setRegistrationDate(Date registrationDate) {
+  public void setRegistrationDate(LocalDate registrationDate) {
     this.registrationDate = registrationDate;
   }
 
-  public void setBirthDate(Date birthDate) {
-    this.birthDate = birthDate;
-  }
+  public void setBirthDate(LocalDate birthDate) { this.birthDate = birthDate; }
 
-  public void setInsurance(Insurance insurance) {
-    this.insurance = insurance;
-  }
+  public void setInsurance(Insurance insurance) { this.insurance = insurance; }
 
-  @Override
-  public String toString() {
-    return "Patient [id: " + id + ", name: " + name + ", lastName: " + lastName +
-        ", dni: " + dni + ", registrationDate: " + registrationDate +
-        ", birthDate: " + birthDate + ", insurance: " + insurance + "]"
-    ;
-  }
 }

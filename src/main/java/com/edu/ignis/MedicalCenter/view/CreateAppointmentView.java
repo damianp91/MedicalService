@@ -1,8 +1,11 @@
 package com.edu.ignis.MedicalCenter.view;
 
+import com.edu.ignis.MedicalCenter.model.Specialty;
+
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
@@ -26,7 +29,8 @@ public class CreateAppointmentView extends VBox {
     Label lbName = new Label("Name patient: ");
     TextField fieldName = new TextField();
     Label lbSpecialty = new Label("Specialty: ");
-    TextField fieldSpecialty = new TextField();
+    ComboBox<Specialty> fieldSpecialty = new ComboBox<>();
+    fieldSpecialty.getItems().addAll(Specialty.values());
 
     Button btnSave = new Button("Save");
     Button btnClean = new Button("Clean");

@@ -17,7 +17,7 @@ public class Main extends Application {
     MenuView menu = new MenuView(primaryStage);
     Scene scene = new Scene(menu, 400, 400);
     primaryStage.setScene(scene);
-    primaryStage.setTitle("JavaFX Project:MedicalCenter");
+    primaryStage.setTitle("MedicalCenter");
     primaryStage.show();
   }
 }
