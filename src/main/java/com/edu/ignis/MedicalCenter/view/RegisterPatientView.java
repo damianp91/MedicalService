@@ -43,6 +43,8 @@ public class RegisterPatientView extends VBox {
     Button btnClean = new Button("Clean");
     Button btnBack = new Button("Back");
 
+    btnSave.setOnAction(e -> {});
+
     btnBack.setOnAction(e -> {
       MenuView menu = new MenuView(stage);
       stage.setScene(new Scene(menu, 400, 400));
@@ -55,7 +57,6 @@ public class RegisterPatientView extends VBox {
       fieldBirth.setValue(null);
       fieldInsurance.setValue(null);
     });
-
 
     HBox box = new HBox(10, btnClean, btnSave, btnBack);
     box.setAlignment(Pos.CENTER);

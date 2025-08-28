@@ -1,8 +1,10 @@
 package com.edu.ignis.MedicalCenter.persistence;
 
-import java.io.Serializable;
+import com.edu.ignis.MedicalCenter.model.Appointment;
 
-public class AppointmentDAO implements Serializable {
+public class AppointmentDAO extends GenericDAO<Appointment> {
 
-  
+  public AppointmentDAO() {
+    super(Appointment.class);
+  }
 }

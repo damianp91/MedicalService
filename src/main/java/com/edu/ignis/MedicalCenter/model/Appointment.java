@@ -51,8 +51,6 @@ public class Appointment implements Serializable {
   public Status getStatus() { return status; }
   
   // Setters
-  public void setId(int id) { this.id = id; }
-
   public void setSpecialty(Specialty specialty) { this.specialty = specialty; }
 
   public void setAmountPay(double amountPay) { this.amountPay = amountPay; }

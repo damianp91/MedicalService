@@ -36,18 +36,18 @@ public class Patient implements Serializable {
   @Enumerated(EnumType.STRING)
   @Column(nullable = false)
   private Insurance insurance;
-  
+
   // Constructor
   // Constructor empty is necesary because JPA needs for insert entities by
   // reflection
   public Patient () { }
 
-  public Patient(String name, String lastName, int dni, LocalDate registrationDate,
-      LocalDate birthDate, Insurance insurance) {
+  public Patient(String name, String lastName, int dni, LocalDate birthDate,
+      Insurance insurance) {
     this.name = name;
     this.lastName = lastName;
     this.dni = dni;
-    this.registrationDate = registrationDate;
+    this.registrationDate = LocalDate.now();
     this.birthDate = birthDate;
     this.insurance = insurance;
   }
@@ -68,17 +68,11 @@ public class Patient implements Serializable {
   public Insurance getInsurance() { return insurance; }
 
   // Setters
-  public void setId(int id) { this.id = id; }
+  public void setName(String name) { this.name = name.toUpperCase(); }
 
-  public void setName(String name) { this.name = name; }
-
-  public void setLastName(String lastName) { this.lastName = lastName; }
+  public void setLastName(String lastName) { this.lastName = lastName.toUpperCase(); }
 
   public void setDni(int dni) { this.dni = dni; }
-
-  public void setRegistrationDate(LocalDate registrationDate) {
-    this.registrationDate = registrationDate;
-  }
 
   public void setBirthDate(LocalDate birthDate) { this.birthDate = birthDate; }
 

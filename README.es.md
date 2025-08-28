@@ -100,9 +100,7 @@ Maneja la lógica de interacción entre modelo y vista:
 7. **Cerrar caja**
    - Si no hay turnos pendientes, guarda pacientes y turnos en JSON
    - Caso contrario, mostrar mensaje
-8. **Mostrar informe**:
-   - Monto total obtenido de pacientes SwMedical mayores de 21 años
-9. **Salir**
+8. **Salir**
 
 
 ## 💾 Persistencia y Tecnologías Requeridas

@@ -73,7 +73,7 @@ Manages the interaction logic between model and view:
 - **Insurance based on age**:
   - ≥ 60: only FAMI allowed
   - < 60: FAMI not allowed
-- **Specialties**: General Medicine, Dentistry, Psychology, Traumatology  
+- **Specialties**: General Medicine, Dentistry, Psychology, Traumatology, Dermatology.  
 - **Initial appointment status**: “Active”  
 - **Base appointment fee**: $4000, with the following adjustments:
 
@@ -102,8 +102,7 @@ Manages the interaction logic between model and view:
    - Only if there are no “Active” or “Completed” appointments
    - Save patients and appointments to JSON
    - Otherwise, show warning message
-8. **Total** revenue from SwMedical patients over 21
-9. **Exit**
+8. **Exit**
 
 
 ## 💾 Persistence and Required Technologies

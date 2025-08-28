@@ -5,6 +5,7 @@ com/edu/ignis/MedicalCenter/persistence/exceptions/NonexistentEntityException.cl
 com/edu/ignis/MedicalCenter/controller/PatientController.class
 com/edu/ignis/MedicalCenter/model/Clinic.class
 com/edu/ignis/MedicalCenter/view/MenuView.class
+com/edu/ignis/MedicalCenter/controller/AppointmentController.class
 com/edu/ignis/MedicalCenter/persistence/exceptions/PreexistingEntityException.class
 com/edu/ignis/MedicalCenter/persistence/exceptions/IllegalOrphanException.class
 com/edu/ignis/MedicalCenter/model/Patient.class

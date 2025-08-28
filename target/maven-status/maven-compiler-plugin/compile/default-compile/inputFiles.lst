@@ -11,6 +11,7 @@
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/persistence/exceptions/NonexistentEntityException.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/view/CreateAppointmentView.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Status.java
+/home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/controller/AppointmentController.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/persistence/GenericDAO.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/persistence/exceptions/IllegalOrphanException.java
 /home/damianp/NvimProjectsJava/MedicalCenter/src/main/java/com/edu/ignis/MedicalCenter/model/Insurance.java

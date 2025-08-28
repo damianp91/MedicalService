@@ -1,9 +1,11 @@
 package com.edu.ignis.MedicalCenter.model;
 
+import java.util.List;
+
 public class Clinic {
   
-  private int id;
   private String businessName;
-  private Appointment appointment;
+  private List<Patient> patients;
+  private List<Appointment> appointments;
   private double revenue;
 }
