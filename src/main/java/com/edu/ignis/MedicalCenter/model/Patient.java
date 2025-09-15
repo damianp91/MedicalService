@@ -24,7 +24,7 @@ public class Patient implements Serializable {
   private String name;
   @Column(length = 30, nullable = false)
   private String lastName;
-  
+
   @Column(name = "dni", unique = true, nullable = false)
   private int dni;
   @Column(name = "registration_date", nullable = false)
@@ -68,14 +68,24 @@ public class Patient implements Serializable {
   public Insurance getInsurance() { return insurance; }
 
   // Setters
-  public void setName(String name) { this.name = name.toUpperCase(); }
+  public void setName(String name) {
+    this.name = name.toUpperCase();
+  }
 
-  public void setLastName(String lastName) { this.lastName = lastName.toUpperCase(); }
+  public void setLastName(String lastName) {
+    this.lastName = lastName.toUpperCase();
+  }
 
-  public void setDni(int dni) { this.dni = dni; }
+  public void setDni(int dni) {
+    this.dni = dni;
+  }
 
-  public void setBirthDate(LocalDate birthDate) { this.birthDate = birthDate; }
+  public void setBirthDate(LocalDate birthDate) {
+    this.birthDate = birthDate;
+  }
 
-  public void setInsurance(Insurance insurance) { this.insurance = insurance; }
+  public void setInsurance(Insurance insurance) {
+    this.insurance = insurance;
+  }
 
 }
